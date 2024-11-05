@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="58" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="QuizApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-AO-Cgd">
+                        <rect key="frame" x="15" y="15" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="GN6-IW-OYp"/>
+                            <constraint firstAttribute="width" constant="18" id="Vsx-7r-2go"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1um-Z7-bUm">
+                        <rect key="frame" x="53" y="14.5" width="43.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1um-Z7-bUm" firstAttribute="centerY" secondItem="wIM-AO-Cgd" secondAttribute="centerY" id="D9N-SM-rQu"/>
+                    <constraint firstAttribute="bottom" secondItem="wIM-AO-Cgd" secondAttribute="bottom" constant="15" id="bVf-Sk-nvf"/>
+                    <constraint firstItem="wIM-AO-Cgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dcL-yC-PWK"/>
+                    <constraint firstItem="1um-Z7-bUm" firstAttribute="leading" secondItem="wIM-AO-Cgd" secondAttribute="trailing" constant="20" id="g03-gr-4ZJ"/>
+                    <constraint firstItem="wIM-AO-Cgd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lzK-Y4-8Bl"/>
+                    <constraint firstItem="wIM-AO-Cgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wbc-m8-dsN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="menuFields" destination="1um-Z7-bUm" id="qA8-tb-8W5"/>
+                <outlet property="menuImages" destination="wIM-AO-Cgd" id="O6j-4Q-Ydt"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home" width="10.666666984558105" height="10.666666984558105"/>
+    </resources>
+</document>
